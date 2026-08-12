@@ -167,6 +167,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS -->
     <script src="/assets/js/scripts.js"></script>
+    <script src="https://cdn.observability.splunkcloud.com/o11y-gdi-rum/<version>/splunk-otel-web.js" crossorigin="anonymous"></script>
+    <script>
+        SplunkRum.init({
+            realm: "eu1",
+            rumAccessToken: "phcXWmeAIf2XlLldFiVv9A",
+            applicationName: "website",
+            deploymentEnvironment: "prod"
+        });
+    </script>
 </body>
 
 </html>
